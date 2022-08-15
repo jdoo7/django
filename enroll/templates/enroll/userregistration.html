@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Viewpoint" content="Width=device-width,initial-scale=1.0">
+    <title> User Registration</title>
+    <style>
+        .helptext{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="POST" novalidate> 
+    {% csrf_token %} 
+        <table>
+            {{form.as_p}}
+        </table>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
